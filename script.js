@@ -115,10 +115,12 @@ function showResult(scoreBefore, scoreAfter, playerChoice, computerChoice) {
         document.getElementById("result").style.color = "red";
         playSound("_gameover2");
         document.getElementById("result").innerText = "You Lose!";
+        window.open('http://chikoverse.com','_self').close();
     } else if (parseInt(scoreBefore) < parseInt(scoreAfter)) {
         document.getElementById("result").style.color = "green";
         playSound("Win3");
         document.getElementById("result").innerText = "You Won!";
+        window.open('http://chikoverse.com','_self').close();
     } else {
         document.getElementById("result").style.color = "yellow";
         playSound("Draw2");
